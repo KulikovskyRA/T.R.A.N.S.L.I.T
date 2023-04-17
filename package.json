@@ -1,0 +1,17 @@
+{
+  "name": "phase0-final-project",
+  "version": "1.0.0",
+  "description": "![screenshot](tr.gif)\r ## Введение\r Тебе предстоит разработать веб-приложение по [макету](https://www.figma.com/file/AWCUP5T3n3UnujErifjl2e/ECB-Phase-0-tasks-T.R.A.N.S.L.I.T.-share?node-id=0%3A1), которое будет превращать текст на русском языке в его транслитерацию и сохранять её в словарик.\r С чего начать? Обычно, когда даётся задача в таком абстрактном виде, то её надо разбить на подзадачи. Этот процесс, говоря более умными словами, называется __декомпозиция__. Тебе повезло, мы уже провели декомпозицию - разбили задачу на релизы!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}

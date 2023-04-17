@@ -1,0 +1,188 @@
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #4520ab;
+  margin-top: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
+}
+
+.inputField {
+  border-radius: 14px;
+  border: 2.5px solid black;
+  width: 500px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  margin-left: 8px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  font-weight: 450;
+  font-size: 31px;
+}
+
+.inputText {
+  border: 0;
+  outline: 0;
+  width: 400px; /*Что бы поле ввода при введении большого текса выглядело красивее*/
+  height: 38.08px;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  color: black;
+  opacity: 0.4;
+  padding-left: 0px;
+  margin-right: 8px;
+}
+
+.addButton {
+  width: 107px;
+  height: 38.08px;
+  border-radius: 8px;
+  background: black;
+  border: 0;
+  outline: 0;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.box {
+  border-radius: 8px;
+  background-color: rgb(216, 216, 216);
+  width: 500px;
+  min-height: 50px;
+  /*Для того, чтобы скругление применялось и к доченим эл-там8? */
+  overflow: hidden;
+}
+
+.covered {
+  display: none;
+  /*Чтобы не клипался текст в box пытался использовать fixed
+  но, fixed двигается при прокрутке колесом
+  Поставил абсолют, а сам covered  вывел из short (в js
+  и вставил в newRus/newTrans*/
+  position: absolute;
+  transform: translate(-10%, 0%); /*Позиционирование*/
+  padding: 8px 16px 10px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.line {
+  display: flex;
+  height: 50px;
+}
+
+.newLine {
+  border-top: 1.7px solid black;
+}
+
+.rus,
+.trans {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.rus {
+  border-right: 3px solid black;
+  background-color: rgb(240, 240, 240);
+  width: 50%;
+}
+
+.trans {
+  width: 45%;
+  justify-content: space-between;
+  margin: 0px 11px 0px 28px;
+}
+
+.inputValue {
+  margin: 0px 28px 0px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+}
+
+.cleansing {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  background-color: #adadad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px 8px;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+/* media ставятся в конце */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -0.07em;
+    margin: 20px;
+  }
+  .main {
+    padding-top: 50px;
+    gap: 50px;
+  }
+  .box,
+  .inputField {
+    width: 328px;
+  }
+  .inputText {
+    width: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+  .trans {
+    margin: 0px 8px 0px 16px;
+  }
+
+  .inputValue {
+    margin: 0px 16px 0px 12px;
+  }
+}
